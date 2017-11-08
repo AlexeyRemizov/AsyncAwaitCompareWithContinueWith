@@ -1,0 +1,8 @@
+c:\users\oleksii.remizov\documents\visual studio 2017\Projects\AsyncAwaitCompareWithContinueWith\AsyncAwaitCompareWithContinueWith\bin\Debug\AsyncAwaitCompareWithContinueWith.exe.config
+c:\users\oleksii.remizov\documents\visual studio 2017\Projects\AsyncAwaitCompareWithContinueWith\AsyncAwaitCompareWithContinueWith\bin\Debug\AsyncAwaitCompareWithContinueWith.exe
+c:\users\oleksii.remizov\documents\visual studio 2017\Projects\AsyncAwaitCompareWithContinueWith\AsyncAwaitCompareWithContinueWith\bin\Debug\AsyncAwaitCompareWithContinueWith.pdb
+c:\users\oleksii.remizov\documents\visual studio 2017\Projects\AsyncAwaitCompareWithContinueWith\AsyncAwaitCompareWithContinueWith\bin\Debug\System.Configuration.ConfigurationManager.dll
+c:\users\oleksii.remizov\documents\visual studio 2017\Projects\AsyncAwaitCompareWithContinueWith\AsyncAwaitCompareWithContinueWith\obj\Debug\AsyncAwaitCompareWithContinueWith.csprojResolveAssemblyReference.cache
+c:\users\oleksii.remizov\documents\visual studio 2017\Projects\AsyncAwaitCompareWithContinueWith\AsyncAwaitCompareWithContinueWith\obj\Debug\AsyncAwaitCompareWithContinueWith.csproj.CoreCompileInputs.cache
+c:\users\oleksii.remizov\documents\visual studio 2017\Projects\AsyncAwaitCompareWithContinueWith\AsyncAwaitCompareWithContinueWith\obj\Debug\AsyncAwaitCompareWithContinueWith.exe
+c:\users\oleksii.remizov\documents\visual studio 2017\Projects\AsyncAwaitCompareWithContinueWith\AsyncAwaitCompareWithContinueWith\obj\Debug\AsyncAwaitCompareWithContinueWith.pdb

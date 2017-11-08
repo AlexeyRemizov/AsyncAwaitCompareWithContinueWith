@@ -1,0 +1,7 @@
+Ehhh.... I think some of the current answers are missing something: what happens with exceptions?
+
+The only reason you would call Wait in a continuation would be to observe a potential exception from the antecedent in the continuation itself. The same observation would happen if you accessed  Result in the case of a Task<T> and also if you manually accessed the Exception property. Frankly, I wouldn't call Wait or access Result because if there is an exception you'll pay the price of re-raising it which is unnecessary overhead. Instead you can just check the IsFaulted property off the antecedent Task. Alternatively you can create forked workflows by chaining on multiple sibling continuations that only fire based on either success or failure with TaskContinuationOptions.OnlyOnRanToCompletion and TaskContinuationOptions.OnlyOnFaulted.
+
+Now, it's not necessary to observe the exception of the antecedent in the continuation, but you may not want your workflow to move forward if, say, "Step 1" failed. In that case: specifying TaskContinuationOptions.NotOnFaulted to your ContinueWith calls would prevent the continuation logic from ever even firing.
+
+Keep in mind that, if your own continuations don't observe the exception, the person who is waiting on this overall workflow to complete is going to be the one to observe it. Either they're Waiting on the Task upstream or have tacked on their own continuation to know when it is complete. If it is the latter, their continuation would need to use the aforementioned observation logic.
