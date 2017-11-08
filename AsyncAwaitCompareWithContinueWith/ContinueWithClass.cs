@@ -19,21 +19,24 @@ namespace AsyncAwaitCompareWithContinueWith
                     .ReadToEndAsync()
                     .ContinueWith(x =>
                     {
-                        string data = x.Result;
-                        count += data.Length;
-                        for (var value = 0; value < 10000; value++)
-                        {
-                            int getHashCoed = data.GetHashCode();
-                            if (getHashCoed == 0)
+                            string data = x.Result;
+                            count += data.Length;
+                            for (var value = 0; value < 10000; value++)
                             {
-                                count--;
+                                int getHashCoed = data.GetHashCode();
+                                if (getHashCoed == 0)
+                                {
+                                    count--;
+                                }
                             }
-                        }
+                       
                         return count;
                     });
+                task.Wait(1000);
             }
-            
+
             return task;
         }
+
     }
 }
